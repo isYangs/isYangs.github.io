@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "H:/博客/hugo/isYangs-Blog",
+	"sourceRoot": "G:/博客/hugo/isYangs-Blog",
 	"sources": [
 		"themes/DoIt/assets/css/style.scss",
 		"themes/DoIt/assets/css/_variables.scss",
