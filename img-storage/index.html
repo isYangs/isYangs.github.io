@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title class="pjax-title">使用本站提供的图床服务 - isYangs&#39;s Blog</title><meta name="Description" content="isYangs的个人博客，分享技术文章和原创项目，如果有幸让你发现，那么请多待几秒吧！"><meta property="og:title" content="使用本站提供的图床服务" />
+<meta property="og:description" content="写在前面最开始我也是使用网上的免费图床，但是用了以后发现了很多问题，比如：对免费用户不友好，有限的空间，上传大小限制，而且因为是免费用户的原" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuewuzhibu.cn/img-storage/" /><meta property="og:image" content="https://xuewuzhibu.cn/images/avatar.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-23T10:46:29+08:00" />
+<meta property="article:modified_time" content="2022-08-23T10:46:29+08:00" /><meta property="og:site_name" content="isYangs&#39;s Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xuewuzhibu.cn/images/avatar.jpg"/>
+
+<meta name="twitter:title" content="使用本站提供的图床服务"/>
+<meta name="twitter:description" content="写在前面最开始我也是使用网上的免费图床，但是用了以后发现了很多问题，比如：对免费用户不友好，有限的空间，上传大小限制，而且因为是免费用户的原"/>
+<meta name="application-name" content="isYangs&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="isYangs&#39;s Blog">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://xuewuzhibu.cn/img-storage/" /><link rel="prev" href="https://xuewuzhibu.cn/donation/" /><link rel="next" href="https://xuewuzhibu.cn/hello-world/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="0f-942ukDH1oIClpnqMN7qs9yHZ1PlHmKYrGSIBKlFM" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "使用本站提供的图床服务",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/xuewuzhibu.cn\/img-storage\/"
+        },"image": ["https:\/\/xuewuzhibu.cn\/images\/avatar.jpg"],"genre": "posts","keywords": "图床","wordcount":  782 ,
+        "url": "https:\/\/xuewuzhibu.cn\/img-storage\/","datePublished": "2022-08-23T10:46:29+08:00","dateModified": "2022-08-23T10:46:29+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/xuewuzhibu.cn\/images\/avatar.webp",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "isYangs"
+            },"description": ""
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="isYangs&#39;s Blog"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="全部文章"><i class='fas fa-newspaper fa-fw'></i> 全部文章 </a><a class="menu-item" href="/tags/" title="文章标签"><i class='fas fa-tags fa-fw'></i> 标签 </a><a class="menu-item" href="/categories/" title="文章分类"><i class='fas fa-list fa-fw'></i> 分类 </a><a class="menu-item" href="/friends/" title="友链墙"><i class='fas fa-link fa-fw'></i> 友链 </a><a class="menu-item" href="/donation/" title="感谢赞助，老板大气~"><i class='fas fa-fw fa-donate'></i> 赞助 </a><a class="menu-item" href="/about/" title="关于本站及博主"><i class='fas fa-at fa-fw'></i> 关于 </a><a class="menu-item" href="https://github.com/isYangs" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="isYangs&#39;s Blog"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="全部文章"><i class='fas fa-newspaper fa-fw'></i>全部文章</a><a class="menu-item" href="/tags/" title="文章标签"><i class='fas fa-tags fa-fw'></i>标签</a><a class="menu-item" href="/categories/" title="文章分类"><i class='fas fa-list fa-fw'></i>分类</a><a class="menu-item" href="/friends/" title="友链墙"><i class='fas fa-link fa-fw'></i>友链</a><a class="menu-item" href="/donation/" title="感谢赞助，老板大气~"><i class='fas fa-fw fa-donate'></i>赞助</a><a class="menu-item" href="/about/" title="关于本站及博主"><i class='fas fa-at fa-fw'></i>关于</a><a class="menu-item" href="https://github.com/isYangs" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="#" onclick="return false;" class="menu-item theme-select" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目录</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#写在前面">写在前面</a></li>
+    <li><a href="#关于图床">关于图床</a>
+      <ul>
+        <li><a href="#提供服务的厂商">提供服务的厂商</a></li>
+      </ul>
+    </li>
+    <li><a href="#图床使用">图床使用</a>
+      <ul>
+        <li><a href="#上传图片">上传图片</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">使用本站提供的图床服务</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="https://github.com/isYangs" title="Author" target="_blank" rel="noopener noreffer author" class="author">isYangs</a>
+                </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/categories/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/"><i class="far fa-folder fa-fw"></i>关于本站</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-23">2022-08-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-08-23">2022-08-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 782 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id="/img-storage/" class="leancloud_visitors" data-flag-title="使用本站提供的图床服务">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class="leancloud-visitors-count waline-pageview-count" data-path="/img-storage/"></span>&nbsp;次阅读
+                    </span>&nbsp;<span id="/img-storage/" class="comment_count" data-flag-title="使用本站提供的图床服务">
+                        <i class="far fa-comments fa-fw"></i>&nbsp;<span class="waline-comment-count" id="waline-comment-count" data-path="/img-storage/"></span>&nbsp;条评论
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#写在前面">写在前面</a></li>
+    <li><a href="#关于图床">关于图床</a>
+      <ul>
+        <li><a href="#提供服务的厂商">提供服务的厂商</a></li>
+      </ul>
+    </li>
+    <li><a href="#图床使用">图床使用</a>
+      <ul>
+        <li><a href="#上传图片">上传图片</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="写在前面" class="headerLink">
+    <a href="#%e5%86%99%e5%9c%a8%e5%89%8d%e9%9d%a2" class="header-mark"></a>写在前面</h2><p>最开始我也是使用网上的免费图床，但是用了以后发现了很多问题，比如：对免费用户不友好，有限的空间，上传大小限制，而且因为是免费用户的原因图床CDN的速度也很慢，并且不能保证图片是否可以长期存储。提供上述一系列的问题，于是我决定自己搭建一个图床，并且提供给免费大家使用。</p>
+<h2 id="关于图床" class="headerLink">
+    <a href="#%e5%85%b3%e4%ba%8e%e5%9b%be%e5%ba%8a" class="header-mark"></a>关于图床</h2><h3 id="提供服务的厂商" class="headerLink">
+    <a href="#%e6%8f%90%e4%be%9b%e6%9c%8d%e5%8a%a1%e7%9a%84%e5%8e%82%e5%95%86" class="header-mark"></a>提供服务的厂商</h3><ul>
+<li>图床站点服务器：阿里云服务器提供网站服务。</li>
+<li>图像存储：<a href="https://console.upyun.com/register/?invite=XRY707MJ6" target="_blank" rel="noopener noreffer">又拍云</a>云存储(USS)提供图像存储服务。</li>
+<li>图床程序：采用 <a href="https://www.lsky.pro" target="_blank" rel="noopener noreffer">LskyPro付费版</a></li>
+</ul>
+<h2 id="图床使用" class="headerLink">
+    <a href="#%e5%9b%be%e5%ba%8a%e4%bd%bf%e7%94%a8" class="header-mark"></a>图床使用</h2><p>前往 <a href="https://i.xuewuzhibu.cn/register" target="_blank" rel="noopener noreffer">注册</a>或 <a href="https://i.xuewuzhibu.cn/login" target="_blank" rel="noopener noreffer">登录</a> 图传现阶段只提供给免费用户使用，默认注册赠送200GB的存储空间。</p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>使用须知<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>因为图床成本较高，所以后期会添加增值服务，请多包涵</li>
+<li>如果你想要白嫖😉，现在 <a href="https://i.xuewuzhibu.cn/register" target="_blank" rel="noopener noreffer">注册</a>账号后即可赠送200GB的永久存储空间</li>
+<li>虽然后期会开启增值服务，但是可以保证免费用户的速度依旧是最快的，增值只针对需要大容量存储空间的用户</li>
+<li>因为图床采用 <a href="https://console.upyun.com/register/?invite=XRY707MJ6" target="_blank" rel="noopener noreffer">又拍云</a>云存储(USS)，所以务必在本地做好备份，请谨记数据大于一切</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="上传图片" class="headerLink">
+    <a href="#%e4%b8%8a%e4%bc%a0%e5%9b%be%e7%89%87" class="header-mark"></a>上传图片</h3><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>默认用户组上传规则<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>图片大小不超过50MB</li>
+<li>并发上传不超过5张</li>
+<li>每分钟可上传500张</li>
+<li>每小时可上传1000张</li>
+<li>具体请在 <a href="https://i.xuewuzhibu.cn/user/dashboard" target="_blank" rel="noopener noreffer">图床仪表盘</a> 查看</li>
+</ul>
+</div>
+        </div>
+    </div>
+<p>上传图片可以通过以下两种方式：</p>
+<p>第一种：直接在上传页面选择本地图片上传，上传后会自动生成一个图片链接，可以直接复制使用。</p>
+<p>第二种：通过API上传图片，<a href="https://i.xuewuzhibu.cn/page/api-docs.html" target="_blank" rel="noopener noreffer">查看API文档</a></p>
+<p>API地址为：<a href="https://i.xuewuzhibu.cn/api/v1/upload" target="_blank" rel="noopener noreffer">https://i.xuewuzhibu.cn/api/v1/upload</a></p>
+<p>首先需要在图床后台申请<code>Token</code></p>
+<p><figure><a class="lightgallery" href="https://a.xuewuzhibu.cn/1/63049b56d0566-1.png" title="https://a.xuewuzhibu.cn/1/63049b56d0566-1.png" data-thumbnail="https://a.xuewuzhibu.cn/1/63049b56d0566-1.png" data-sub-html="<h2>申请Token</h2>">
+        <img
+            class="lazyload"
+            data-src="https://a.xuewuzhibu.cn/1/63049b56d0566-1.png"
+            data-srcset="https://a.xuewuzhibu.cn/1/63049b56d0566-1.png, https://a.xuewuzhibu.cn/1/63049b56d0566-1.png 1.5x, https://a.xuewuzhibu.cn/1/63049b56d0566-1.png 2x"
+            data-sizes="auto"
+            alt="https://a.xuewuzhibu.cn/1/63049b56d0566-1.png">
+    </a><figcaption class="image-caption">申请Token</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="https://a.xuewuzhibu.cn/1/63049b56f088c-1.png" title="https://a.xuewuzhibu.cn/1/63049b56f088c-1.png" data-thumbnail="https://a.xuewuzhibu.cn/1/63049b56f088c-1.png" data-sub-html="<h2>创建Token</h2>">
+        <img
+            class="lazyload"
+            data-src="https://a.xuewuzhibu.cn/1/63049b56f088c-1.png"
+            data-srcset="https://a.xuewuzhibu.cn/1/63049b56f088c-1.png, https://a.xuewuzhibu.cn/1/63049b56f088c-1.png 1.5x, https://a.xuewuzhibu.cn/1/63049b56f088c-1.png 2x"
+            data-sizes="auto"
+            alt="https://a.xuewuzhibu.cn/1/63049b56f088c-1.png">
+    </a><figcaption class="image-caption">创建Token</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="https://a.xuewuzhibu.cn/1/63049b550782e-1.png" title="https://a.xuewuzhibu.cn/1/63049b550782e-1.png" data-thumbnail="https://a.xuewuzhibu.cn/1/63049b550782e-1.png" data-sub-html="<h2>获取ToKen</h2>">
+        <img
+            class="lazyload"
+            data-src="https://a.xuewuzhibu.cn/1/63049b550782e-1.png"
+            data-srcset="https://a.xuewuzhibu.cn/1/63049b550782e-1.png, https://a.xuewuzhibu.cn/1/63049b550782e-1.png 1.5x, https://a.xuewuzhibu.cn/1/63049b550782e-1.png 2x"
+            data-sizes="auto"
+            alt="https://a.xuewuzhibu.cn/1/63049b550782e-1.png">
+    </a><figcaption class="image-caption">获取ToKen</figcaption>
+    </figure></p>
+<p><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>提示<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">使用红色「*」符号标注，则表示为必传项。</div>
+        </div>
+    </div>
+然后在请求头(Header)中添加如下参数：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">参数</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right"><code>* Accept</code></td>
+<td style="text-align:center"><code>String</code></td>
+<td style="text-align:left">必须设置为 <code>application/json</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><code>* Authorization</code></td>
+<td style="text-align:center"><code>String</code></td>
+<td style="text-align:left"><code>Bearer</code> 你申请的Token(注意中间的空格)</td>
+</tr>
+<tr>
+<td style="text-align:right"><code>* Content-Type</code></td>
+<td style="text-align:center"><code>String</code></td>
+<td style="text-align:left">需要设置为 <code>application/json</code></td>
+</tr>
+</tbody>
+</table>
+<figure><a class="lightgallery" href="https://a.xuewuzhibu.cn/1/63049b54e9686-1.png" title="https://a.xuewuzhibu.cn/1/63049b54e9686-1.png" data-thumbnail="https://a.xuewuzhibu.cn/1/63049b54e9686-1.png" data-sub-html="<h2>请求头参数</h2>">
+        <img
+            class="lazyload"
+            data-src="https://a.xuewuzhibu.cn/1/63049b54e9686-1.png"
+            data-srcset="https://a.xuewuzhibu.cn/1/63049b54e9686-1.png, https://a.xuewuzhibu.cn/1/63049b54e9686-1.png 1.5x, https://a.xuewuzhibu.cn/1/63049b54e9686-1.png 2x"
+            data-sizes="auto"
+            alt="https://a.xuewuzhibu.cn/1/63049b54e9686-1.png">
+    </a><figcaption class="image-caption">请求头参数</figcaption>
+    </figure>
+<p>然后在请求体(Body)中添加如下参数：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>* file</code></td>
+<td style="text-align:center"><code>file</code></td>
+<td style="text-align:center">图片文件</td>
+</tr>
+</tbody>
+</table>
+<figure><a class="lightgallery" href="https://a.xuewuzhibu.cn/1/63049b543c9e9-1.png" title="https://a.xuewuzhibu.cn/1/63049b543c9e9-1.png" data-thumbnail="https://a.xuewuzhibu.cn/1/63049b543c9e9-1.png" data-sub-html="<h2>请求体参数</h2>">
+        <img
+            class="lazyload"
+            data-src="https://a.xuewuzhibu.cn/1/63049b543c9e9-1.png"
+            data-srcset="https://a.xuewuzhibu.cn/1/63049b543c9e9-1.png, https://a.xuewuzhibu.cn/1/63049b543c9e9-1.png 1.5x, https://a.xuewuzhibu.cn/1/63049b543c9e9-1.png 2x"
+            data-sizes="auto"
+            alt="https://a.xuewuzhibu.cn/1/63049b543c9e9-1.png">
+    </a><figcaption class="image-caption">请求体参数</figcaption>
+    </figure>
+<p>最后就可以在图床后台查看到图片</p>
+<figure><a class="lightgallery" href="https://a.xuewuzhibu.cn/1/63049b5474b35-1.png" title="https://a.xuewuzhibu.cn/1/63049b5474b35-1.png" data-thumbnail="https://a.xuewuzhibu.cn/1/63049b5474b35-1.png" data-sub-html="<h2>后台图片</h2>">
+        <img
+            class="lazyload"
+            data-src="https://a.xuewuzhibu.cn/1/63049b5474b35-1.png"
+            data-srcset="https://a.xuewuzhibu.cn/1/63049b5474b35-1.png, https://a.xuewuzhibu.cn/1/63049b5474b35-1.png 1.5x, https://a.xuewuzhibu.cn/1/63049b5474b35-1.png 2x"
+            data-sizes="auto"
+            alt="https://a.xuewuzhibu.cn/1/63049b5474b35-1.png">
+    </a><figcaption class="image-caption">后台图片</figcaption>
+    </figure>
+</div>
+
+        
+
+<div class="sponsor">
+        <div class="sponsor-avatar"><img
+        class="lazyload"
+        data-src="/images/avatar.jpg"
+        data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x"
+        data-sizes="auto"
+        alt="/images/avatar.jpg"
+        title="/images/avatar.jpg"></div><p class="sponsor-bio"><em>如果文章对你有帮助，欢迎赞赏~</em></p>
+        
+        <div class="post-sponsor">
+            <input type="checkbox" name="sponsor" id="sponsor" hidden />
+            <label class="sponsor-button" for="sponsor" title="赞赏一下">
+                <i class="far fa-heart fa-fw icon" style="color: #ec6cb9;"></i>
+                <span>赞赏</span>
+            </label>
+            <div class="qr-code">
+                <label class="qr-code-image" for="sponsor">
+                    <img class="image" src="/images/wechat.png">
+                    <span>微信赞赏</span>
+                </label>
+                <label class="qr-code-image" for="sponsor">
+                    <img class="image" src="/images/alipay.png">
+                    <span>支付宝赞赏</span>
+                </label>
+            </div>
+        </div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-08-23</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/img-storage/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share">
+                <span><a href="#" onclick="return false;" title="分享到 Twitter" data-sharer="twitter" data-url="https://xuewuzhibu.cn/img-storage/" data-title="使用本站提供的图床服务" data-hashtags="图床"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Facebook" data-sharer="facebook" data-url="https://xuewuzhibu.cn/img-storage/" data-hashtag="图床"><i class="fab fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://xuewuzhibu.cn/img-storage/" data-title="使用本站提供的图床服务"><i class="fab fa-hacker-news fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Line" data-sharer="line" data-url="https://xuewuzhibu.cn/img-storage/" data-title="使用本站提供的图床服务"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="#" onclick="return false;" title="分享到 微博" data-sharer="weibo" data-url="https://xuewuzhibu.cn/img-storage/" data-title="使用本站提供的图床服务"><i class="fab fa-weibo fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Evernote" data-sharer="evernote" data-url="https://xuewuzhibu.cn/img-storage/" data-title="使用本站提供的图床服务"><i class="fab fa-evernote fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Telegram" data-sharer="telegram" data-url="https://xuewuzhibu.cn/img-storage/" data-title="使用本站提供的图床服务" data-web><i class="fab fa-telegram-plane fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%9B%BE%E5%BA%8A/">图床</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/donation/" class="prev" rel="prev" title="打赏榜"><i class="fas fa-angle-left fa-fw"></i>打赏榜</a>
+            <a href="/hello-world/" class="next" rel="next" title="Hello World">Hello World<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="waline" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://waline.js.org/">Waline</a>.
+            </noscript></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-line">
+                <span id="run-time"></span>
+            </div><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/isYangs" target="_blank" rel="noopener noreferrer">isYangs</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">陕ICP备2021005865号-1</span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/fuse/fuse.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/custom.js"></script></div>
+
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"waline":{"comment":true,"copyright":true,"dark":"body[theme='dark'], body[theme='black']","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/qq"],"lang":"zh-cn","login":"enable","meta":["nick","mail","link"],"pageview":true,"requiredMeta":["nick","mail"],"serverURL":"https://waline.isyangs.me/"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"isYangs's Blog","mobile-header-typeit":"isYangs's Blog"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":true,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.1,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/waline/waline.js" defer></script><script type="text/javascript" src="/js/waline.min.js" defer></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js" defer></script><script type="text/javascript" src="/js/twemoji.min.js" defer></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><link rel="stylesheet" href="/lib/waline/waline.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"></div>
+</body>
+
+</html>

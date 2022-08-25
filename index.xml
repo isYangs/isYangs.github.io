@@ -1,0 +1,42 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>isYangs&#39;s Blog</title>
+        <link>https://xuewuzhibu.cn/</link>
+        <description>isYangs的个人博客，分享技术文章和原创项目，如果有幸让你发现，那么请多待几秒吧！</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xuewuzhibu@outlook.com (isYangs)</managingEditor>
+            <webMaster>xuewuzhibu@outlook.com (isYangs)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Aug 2022 10:46:29 &#43;0800</lastBuildDate>
+            <atom:link href="https://xuewuzhibu.cn/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Hello World</title>
+    <link>https://xuewuzhibu.cn/hello-world/</link>
+    <pubDate>Sat, 20 Aug 2022 16:11:59 &#43;0800</pubDate><author>
+        <name>isYangs</name>
+    </author><guid>https://xuewuzhibu.cn/hello-world/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://a.xuewuzhibu.cn/1/6304357eb7187-1.png" referrerpolicy="no-referrer">
+            </div>这是原学无止步博客的Hugo版，会替代原版博客。因个人原因和时间问题导致博客年久失修，所以重新部署了博客，替代原版博客。]]></description>
+</item><item>
+    <title>使用本站提供的图床服务</title>
+    <link>https://xuewuzhibu.cn/img-storage/</link>
+    <pubDate>Tue, 23 Aug 2022 10:46:29 &#43;0800</pubDate><author>
+        <name>isYangs</name>
+    </author><guid>https://xuewuzhibu.cn/img-storage/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://a.xuewuzhibu.cn/1/62ffa1ff65991-1.jpg" referrerpolicy="no-referrer">
+            </div>写在前面最开始我也是使用网上的免费图床，但是用了以后发现了很多问题，比如：对免费用户不友好，有限的空间，上传大小限制，而且因为是免费用户的原]]></description>
+</item><item>
+    <title>打赏榜</title>
+    <link>https://xuewuzhibu.cn/donation/</link>
+    <pubDate>Sat, 20 Aug 2022 12:11:59 &#43;0800</pubDate><author>
+        <name>isYangs</name>
+    </author><guid>https://xuewuzhibu.cn/donation/</guid>
+    <description><![CDATA[若博客内容对你有帮助，让你解决问题或者受到启发，可以请博主一杯奶茶/咖啡☕，你的鼓励是我最大的动力。 昵称 金额 时间 备注 isYangs 10元 2022-08-22 一杯奶茶钱 提示]]></description>
+</item><item>
+    <title>友链墙</title>
+    <link>https://xuewuzhibu.cn/friends/</link>
+    <pubDate>Sat, 20 Aug 2022 12:11:59 &#43;0800</pubDate><author>
+        <name>isYangs</name>
+    </author><guid>https://xuewuzhibu.cn/friends/</guid>
+    <description><![CDATA[友链展示 作者相关 此分组仅作者本人使用，主要放置作者的个人网站及项目开源地址。 homePage "homePage演示网站" 本站友链信息 1 2 3 4 5 6 name = isYangs&#39;s Blog url]]></description>
+</item></channel>
+</rss>

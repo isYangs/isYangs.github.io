@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>图床 - 标签 - isYangs&#39;s Blog</title>
+        <link>https://xuewuzhibu.cn/tags/%E5%9B%BE%E5%BA%8A/</link>
+        <description>图床 - 标签 - isYangs&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xuewuzhibu@outlook.com (isYangs)</managingEditor>
+            <webMaster>xuewuzhibu@outlook.com (isYangs)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Aug 2022 10:46:29 &#43;0800</lastBuildDate><atom:link href="https://xuewuzhibu.cn/tags/%E5%9B%BE%E5%BA%8A/" rel="self" type="application/rss+xml" /><item>
+    <title>使用本站提供的图床服务</title>
+    <link>https://xuewuzhibu.cn/img-storage/</link>
+    <pubDate>Tue, 23 Aug 2022 10:46:29 &#43;0800</pubDate><author>
+        <name>isYangs</name>
+    </author><guid>https://xuewuzhibu.cn/img-storage/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://a.xuewuzhibu.cn/1/62ffa1ff65991-1.jpg" referrerpolicy="no-referrer">
+            </div>写在前面最开始我也是使用网上的免费图床，但是用了以后发现了很多问题，比如：对免费用户不友好，有限的空间，上传大小限制，而且因为是免费用户的原]]></description>
+</item></channel>
+</rss>

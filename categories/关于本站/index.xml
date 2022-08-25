@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>关于本站 - 分类 - isYangs&#39;s Blog</title>
+        <link>https://xuewuzhibu.cn/categories/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</link>
+        <description>关于本站 - 分类 - isYangs&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xuewuzhibu@outlook.com (isYangs)</managingEditor>
+            <webMaster>xuewuzhibu@outlook.com (isYangs)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Aug 2022 10:46:29 &#43;0800</lastBuildDate><atom:link href="https://xuewuzhibu.cn/categories/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/" rel="self" type="application/rss+xml" /><item>
+    <title>Hello World</title>
+    <link>https://xuewuzhibu.cn/hello-world/</link>
+    <pubDate>Sat, 20 Aug 2022 16:11:59 &#43;0800</pubDate><author>
+        <name>isYangs</name>
+    </author><guid>https://xuewuzhibu.cn/hello-world/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://a.xuewuzhibu.cn/1/6304357eb7187-1.png" referrerpolicy="no-referrer">
+            </div>这是原学无止步博客的Hugo版，会替代原版博客。因个人原因和时间问题导致博客年久失修，所以重新部署了博客，替代原版博客。]]></description>
+</item><item>
+    <title>使用本站提供的图床服务</title>
+    <link>https://xuewuzhibu.cn/img-storage/</link>
+    <pubDate>Tue, 23 Aug 2022 10:46:29 &#43;0800</pubDate><author>
+        <name>isYangs</name>
+    </author><guid>https://xuewuzhibu.cn/img-storage/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://a.xuewuzhibu.cn/1/62ffa1ff65991-1.jpg" referrerpolicy="no-referrer">
+            </div>写在前面最开始我也是使用网上的免费图床，但是用了以后发现了很多问题，比如：对免费用户不友好，有限的空间，上传大小限制，而且因为是免费用户的原]]></description>
+</item></channel>
+</rss>
