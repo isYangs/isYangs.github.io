@@ -36,7 +36,7 @@
 
 ## 站点大事
 #### 2022年8月20日
-使用[Hugo](https://gohugo.io)重新部署博客，采用[LoveIt](https://hugoloveit.com/zh-cn)主题。
+使用[Hugo](https://gohugo.io)重新部署博客，采用[LoveIt](https://hugoloveit.com/zh-cn)主题及[DoIt](https://hugodoit.pages.dev)在此基础上做了一下调整。
 #### 2021年10月
 博客主题更换为[Spimes主题](https://www.dpaoz.com/85)
 #### 2021年7月
