@@ -14,6 +14,15 @@ primary-color="blue"
 border-animation="borderFlash"
 >}}
 
+{{< friend
+name="学无止步图床"
+url="https://i.xuewuzhibu.cn"
+logo="https://a.xuewuzhibu.cn/1/62ffa32495bbf-1.jpg"
+word="学无止步图床提供安全免费的图床存储服务"
+primary-color="linear-green"
+border-animation="borderFlash"
+>}}
+
 
 ## 本站友链信息
 
