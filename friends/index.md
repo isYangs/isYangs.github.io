@@ -23,6 +23,14 @@ primary-color="linear-green"
 border-animation="borderFlash"
 >}}
 
+### 朋友们
+
+{{< friend
+name="予小记 | 人生乐事"
+url="https://yvu.cc"
+logo="https://q2.qlogo.cn/headimg_dl?dst_uin=763333529&spec=100"
+word="愿山野浓雾都有路灯风…"
+>}}
 
 ## 本站友链信息
 
@@ -49,7 +57,7 @@ word = "站点描述"
 下面是选填项，如果不填写，则为默认。
 
 ```Code
-//默认分组是大佬们，有以下几种分组：大佬们、前端、Java、网络安全、其他，如需别的分组，请联系站长。
+//默认分组是朋友们，有以下几种分组：大佬们、前端、Java、网络安全、其他，如需别的分组，请联系站长。
 group="分组"
 
 //边框及鼠标悬停的背景颜色，允许设置渐变色
