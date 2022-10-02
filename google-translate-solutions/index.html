@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title class="pjax-title">关于谷歌浏览器翻译的解决方案 - isYangs&#39;s Blog</title><meta name="Description" content="isYangs的个人博客，分享技术文章和原创项目，如果有幸让你发现，那么请多待几秒吧！"><meta property="og:title" content="关于谷歌浏览器翻译的解决方案" />
+<meta property="og:description" content="最近一段时间在使用谷歌浏览器翻译时，经常会出现等了很久没反应或者翻译失败的情况😮‍💨，虽然我可不常用，但也不能完全就没用了吧。 解决方法 注意 网" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.xuewuzhibu.cn/google-translate-solutions/" /><meta property="og:image" content="https://www.xuewuzhibu.cn/images/avatar.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-02T09:31:20+08:00" />
+<meta property="article:modified_time" content="2022-10-02T09:31:20+08:00" /><meta property="og:site_name" content="isYangs&#39;s Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.xuewuzhibu.cn/images/avatar.jpg"/>
+
+<meta name="twitter:title" content="关于谷歌浏览器翻译的解决方案"/>
+<meta name="twitter:description" content="最近一段时间在使用谷歌浏览器翻译时，经常会出现等了很久没反应或者翻译失败的情况😮‍💨，虽然我可不常用，但也不能完全就没用了吧。 解决方法 注意 网"/>
+<meta name="application-name" content="isYangs&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="isYangs&#39;s Blog">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://www.xuewuzhibu.cn/google-translate-solutions/" /><link rel="prev" href="https://www.xuewuzhibu.cn/image/" /><link rel="next" href="https://www.xuewuzhibu.cn/hello-world/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="0f-942ukDH1oIClpnqMN7qs9yHZ1PlHmKYrGSIBKlFM" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "关于谷歌浏览器翻译的解决方案",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.xuewuzhibu.cn\/google-translate-solutions\/"
+        },"image": ["https:\/\/www.xuewuzhibu.cn\/images\/avatar.jpg"],"genre": "posts","wordcount":  1031 ,
+        "url": "https:\/\/www.xuewuzhibu.cn\/google-translate-solutions\/","datePublished": "2022-10-02T09:31:20+08:00","dateModified": "2022-10-02T09:31:20+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/www.xuewuzhibu.cn\/images\/avatar.webp",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "isYangs"
+            },"description": ""
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="isYangs&#39;s Blog"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="全部文章"><i class='fas fa-newspaper fa-fw'></i> 全部文章 </a><a class="menu-item" href="/tags/" title="文章标签"><i class='fas fa-tags fa-fw'></i> 标签 </a><a class="menu-item" href="/categories/" title="文章分类"><i class='fas fa-list fa-fw'></i> 分类 </a><a class="menu-item" href="/friends/" title="友链墙"><i class='fas fa-link fa-fw'></i> 友链 </a><a class="menu-item" href="/donation/" title="感谢赞助，老板大气~"><i class='fas fa-fw fa-donate'></i> 赞助 </a><a class="menu-item" href="/about/" title="关于本站及博主"><i class='fas fa-at fa-fw'></i> 关于 </a><a class="menu-item" href="https://github.com/isYangs" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="isYangs&#39;s Blog"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="全部文章"><i class='fas fa-newspaper fa-fw'></i>全部文章</a><a class="menu-item" href="/tags/" title="文章标签"><i class='fas fa-tags fa-fw'></i>标签</a><a class="menu-item" href="/categories/" title="文章分类"><i class='fas fa-list fa-fw'></i>分类</a><a class="menu-item" href="/friends/" title="友链墙"><i class='fas fa-link fa-fw'></i>友链</a><a class="menu-item" href="/donation/" title="感谢赞助，老板大气~"><i class='fas fa-fw fa-donate'></i>赞助</a><a class="menu-item" href="/about/" title="关于本站及博主"><i class='fas fa-at fa-fw'></i>关于</a><a class="menu-item" href="https://github.com/isYangs" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="#" onclick="return false;" class="menu-item theme-select" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">关于谷歌浏览器翻译的解决方案</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="https://github.com/isYangs" title="Author" target="_blank" rel="noopener noreffer author" class="author">isYangs</a>
+                </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/categories/%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"><i class="far fa-folder fa-fw"></i>一些问题的解决方法</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-10-02">2022-10-02</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-10-02">2022-10-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1031 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/google-translate-solutions/" class="leancloud_visitors" data-flag-title="关于谷歌浏览器翻译的解决方案">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class="leancloud-visitors-count waline-pageview-count" data-path="/google-translate-solutions/"></span>&nbsp;次阅读
+                    </span>&nbsp;<span id="/google-translate-solutions/" class="comment_count" data-flag-title="关于谷歌浏览器翻译的解决方案">
+                        <i class="far fa-comments fa-fw"></i>&nbsp;<span class="waline-comment-count" id="waline-comment-count" data-path="/google-translate-solutions/"></span>&nbsp;条评论
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        data-src="https://a.xuewuzhibu.cn/1/633911ff7e727-1.jpeg"
+        data-srcset="https://a.xuewuzhibu.cn/1/633911ff7e727-1.jpeg, https://a.xuewuzhibu.cn/1/633911ff7e727-1.jpeg 1.5x, https://a.xuewuzhibu.cn/1/633911ff7e727-1.jpeg 2x"
+        data-sizes="auto"
+        alt="https://a.xuewuzhibu.cn/1/633911ff7e727-1.jpeg"
+        title="https://a.xuewuzhibu.cn/1/633911ff7e727-1.jpeg" height="auto" width="auto"></div><div class="content" id="content"><p>最近一段时间在使用谷歌浏览器翻译时，经常会出现等了很久没反应或者翻译失败的情况😮‍💨，虽然我可不常用，但也不能完全就没用了吧。</p>
+<h2 id="解决方法" class="headerLink">
+    <a href="#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95" class="header-mark"></a>解决方法</h2><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">网上说是因为谷歌翻译退出了大陆的原因，所以导致 Chrome 浏览器内置翻译无法使用</div>
+        </div>
+    </div>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw"></i>问题<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>为什么我谷歌浏览器有代理，但是翻译还是不行呢？</p>
+<ul>
+<li>因为浏览器内置api不支持扩展配置的socks5代理，所以只有使用系统代理才能生效。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h3 id="1-使用系统代理" class="headerLink">
+    <a href="#1-%e4%bd%bf%e7%94%a8%e7%b3%bb%e7%bb%9f%e4%bb%a3%e7%90%86" class="header-mark"></a>1. 使用系统代理</h3><blockquote>
+<p>在你的代理软件中开启全局模式(系统代理)</p>
+</blockquote>
+<p><strong>以v2ray为例:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">windows: v2rayN =&gt; 在Http代理中选择全局模式开启后图标为红色
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mac: v2rayU =&gt; 点击v2rayU图标，选择全局模式
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>现在去刷新需要翻译的网页，然后右键翻译就可以正常使用了, 但是这样的话，你的所有软件都会走代理，这样会导致你的代理软件流量占用过大，并且还有可能会导致无法正常使用其他软件或网站，所以<span style="color:red"><strong>这种方法不推荐</strong></span>。</p>
+<h3 id="2修改hosts文件" class="headerLink">
+    <a href="#2%e4%bf%ae%e6%94%b9hosts%e6%96%87%e4%bb%b6" class="header-mark"></a>2.修改hosts文件</h3><blockquote>
+<p>通过修改hosts文件，将谷歌翻译的域名指向国内的服务器，这样就可以正常使用了。</p>
+</blockquote>
+<h4 id="mac下修改hosts文件" class="headerLink">
+    <a href="#mac%e4%b8%8b%e4%bf%ae%e6%94%b9hosts%e6%96%87%e4%bb%b6" class="header-mark"></a>mac下修改hosts文件</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">```bash
+</span></span><span class="line"><span class="cl">sudo vim /etc/hosts
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输入开机密码后，会在vim中打开hosts文件，输入键盘上的<code>i</code>键就会进入编辑模式，然后在文件末尾添加以下内容:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># google translate
+</span></span><span class="line"><span class="cl">203.208.40.66 translate.google.com
+</span></span><span class="line"><span class="cl"># google translate api
+</span></span><span class="line"><span class="cl">203.208.40.66 translate.googleapis.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>添加完后，按下键盘上的<code>esc</code>键，然后输入<code>:wq</code>(英文输入法状态下的冒号)保存退出。</p>
+<p>查看是否保存成功，可以使用<code>cat /etc/hosts</code>命令查看hosts文件内容，如果有刚才添加的内容，就说明保存成功了。</p>
+<p>为了保证修改的hosts文件生效，执行以下命令刷新DNS缓存:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo killall -HUP mDNSResponder
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接着执行<code>ping</code>命令查看是否修改成功:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ping translate.google.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果和下图一样，就说明修改成功了。</p>
+<p><a class="lightgallery" href="https://a.xuewuzhibu.cn/1/633909a456bef-1.png" title="ping" data-thumbnail="https://a.xuewuzhibu.cn/1/633909a456bef-1.png">
+        <img
+            class="lazyload"
+            data-src="https://a.xuewuzhibu.cn/1/633909a456bef-1.png"
+            data-srcset="https://a.xuewuzhibu.cn/1/633909a456bef-1.png, https://a.xuewuzhibu.cn/1/633909a456bef-1.png 1.5x, https://a.xuewuzhibu.cn/1/633909a456bef-1.png 2x"
+            data-sizes="auto"
+            alt="https://a.xuewuzhibu.cn/1/633909a456bef-1.png">
+    </a></p>
+<p>重启浏览器，然后再去翻译就可以正常使用了。</p>
+<h4 id="windows下修改hosts文件" class="headerLink">
+    <a href="#windows%e4%b8%8b%e4%bf%ae%e6%94%b9hosts%e6%96%87%e4%bb%b6" class="header-mark"></a>windows下修改hosts文件</h4><blockquote>
+<p>windows下修改hosts文件的方法和mac下的方法类似。</p>
+</blockquote>
+<p>打开<code>C:\Windows\System32\drivers\etc</code>目录，找到<code>hosts</code>文件，选择<code>记事本</code>打开，然后在文件末尾添加以下内容:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># google translate
+</span></span><span class="line"><span class="cl">203.208.40.66 translate.google.com
+</span></span><span class="line"><span class="cl"># google translate api
+</span></span><span class="line"><span class="cl">203.208.40.66 translate.googleapis.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>提示<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>如果遇到无法保存的情况，可以尝试使用管理员身份运行记事本，然后再打开hosts文件。</li>
+<li>若还是无法保存，可以参考<a href="https://juejin.cn/post/6963514594245476393" target="_blank" rel="noopener noreffer">这篇文章</a>，或者自行百度解决方法。</li>
+</ul>
+</div>
+        </div>
+    </div>
+<p>保存退出，然后刷新DNS缓存:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ipconfig /flushdns
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>打开<code>cmd</code>命令行工具，执行<code>ping</code>命令查看是否修改成功:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ping translate.google.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果可以<code>ping</code>通，并且<code>ip</code>为：<code>203.208.40.66</code>，就说明修改成功了。</p>
+<p>重启浏览器，然后再去翻译就可以正常使用了。</p>
+<p><strong>如果没有看懂上面的步骤，可以在评论区留言，我会尽快回复。</strong></p>
+</div>
+
+        
+
+<div class="sponsor">
+        <div class="sponsor-avatar"><img
+        class="lazyload"
+        data-src="/images/avatar.jpg"
+        data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x"
+        data-sizes="auto"
+        alt="/images/avatar.jpg"
+        title="/images/avatar.jpg"></div><p class="sponsor-bio"><em>如果文章对你有帮助，欢迎赞赏~</em></p>
+        
+        <div class="post-sponsor">
+            <input type="checkbox" name="sponsor" id="sponsor" hidden />
+            <label class="sponsor-button" for="sponsor" title="赞赏一下">
+                <i class="far fa-heart fa-fw icon" style="color: #ec6cb9;"></i>
+                <span>赞赏</span>
+            </label>
+            <div class="qr-code">
+                <label class="qr-code-image" for="sponsor">
+                    <img class="image" src="/images/wechat.png">
+                    <span>微信赞赏</span>
+                </label>
+                <label class="qr-code-image" for="sponsor">
+                    <img class="image" src="/images/alipay.png">
+                    <span>支付宝赞赏</span>
+                </label>
+            </div>
+        </div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-10-02</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/google-translate-solutions/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share">
+                <span><a href="#" onclick="return false;" title="分享到 Twitter" data-sharer="twitter" data-url="https://www.xuewuzhibu.cn/google-translate-solutions/" data-title="关于谷歌浏览器翻译的解决方案"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Facebook" data-sharer="facebook" data-url="https://www.xuewuzhibu.cn/google-translate-solutions/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://www.xuewuzhibu.cn/google-translate-solutions/" data-title="关于谷歌浏览器翻译的解决方案"><i class="fab fa-hacker-news fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Line" data-sharer="line" data-url="https://www.xuewuzhibu.cn/google-translate-solutions/" data-title="关于谷歌浏览器翻译的解决方案"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="#" onclick="return false;" title="分享到 微博" data-sharer="weibo" data-url="https://www.xuewuzhibu.cn/google-translate-solutions/" data-title="关于谷歌浏览器翻译的解决方案" data-image="https://a.xuewuzhibu.cn/1/633911ff7e727-1.jpeg"><i class="fab fa-weibo fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Evernote" data-sharer="evernote" data-url="https://www.xuewuzhibu.cn/google-translate-solutions/" data-title="关于谷歌浏览器翻译的解决方案"><i class="fab fa-evernote fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Telegram" data-sharer="telegram" data-url="https://www.xuewuzhibu.cn/google-translate-solutions/" data-title="关于谷歌浏览器翻译的解决方案" data-web><i class="fab fa-telegram-plane fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/image/" class="prev" rel="prev" title="使用本站提供的图床服务"><i class="fas fa-angle-left fa-fw"></i>使用本站提供的图床服务</a>
+            <a href="/hello-world/" class="next" rel="next" title="Hello World">Hello World<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="waline" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://waline.js.org/">Waline</a>.
+            </noscript></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-line">
+                <span id="run-time"></span>
+            </div><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.102.2">Hugo</a> 强力驱动&nbsp;|&nbsp;托管在 <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a> 上&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.13"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/isYangs" target="_blank" rel="noopener noreferrer">isYangs</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">陕ICP备2021005865号-1</span></div>
+            <div class="footer-line">
+                <span style="display: flex;justify-content: center; align-items: center;">本站由 <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img src="/images/upyun.png" style="width: 60px;" /></a> 提供CDN加速服务</span>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/fuse/fuse.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/custom.js"></script></div>
+
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{"waline":{"comment":true,"copyright":true,"dark":"body[theme='dark'], body[theme='black']","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/qq"],"lang":"zh-cn","login":"enable","meta":["nick","mail","link"],"pageview":true,"requiredMeta":["nick","mail"],"serverURL":"https://waline.isyangs.me/"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"isYangs's Blog","mobile-header-typeit":"isYangs's Blog"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":true,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.1,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/waline/waline.js" defer></script><script type="text/javascript" src="/js/waline.min.js" defer></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js" defer></script><script type="text/javascript" src="/js/twemoji.min.js" defer></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><link rel="stylesheet" href="/lib/waline/waline.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"></div>
+</body>
+
+</html>

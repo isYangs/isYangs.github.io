@@ -4,7 +4,7 @@
         <link>https://www.xuewuzhibu.cn/</link>
         <description>isYangs的个人博客，分享技术文章和原创项目，如果有幸让你发现，那么请多待几秒吧！</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>xuewuzhibu@outlook.com (isYangs)</managingEditor>
-            <webMaster>xuewuzhibu@outlook.com (isYangs)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Aug 2022 10:46:29 &#43;0800</lastBuildDate>
+            <webMaster>xuewuzhibu@outlook.com (isYangs)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 Oct 2022 09:31:20 &#43;0800</lastBuildDate>
             <atom:link href="https://www.xuewuzhibu.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Hello World</title>
@@ -16,11 +16,20 @@
                 <img src="https://a.xuewuzhibu.cn/1/6304357eb7187-1.png" referrerpolicy="no-referrer">
             </div>这是原学无止步博客的Hugo版，会替代原版博客。因个人原因和时间问题导致博客年久失修，所以重新部署了博客，替代原版博客。]]></description>
 </item><item>
+    <title>关于谷歌浏览器翻译的解决方案</title>
+    <link>https://www.xuewuzhibu.cn/google-translate-solutions/</link>
+    <pubDate>Sun, 02 Oct 2022 09:31:20 &#43;0800</pubDate><author>
+        <name>isYangs</name>
+    </author><guid>https://www.xuewuzhibu.cn/google-translate-solutions/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://a.xuewuzhibu.cn/1/633911ff7e727-1.jpeg" referrerpolicy="no-referrer">
+            </div>最近一段时间在使用谷歌浏览器翻译时，经常会出现等了很久没反应或者翻译失败的情况😮‍💨，虽然我可不常用，但也不能完全就没用了吧。 解决方法 注意 网]]></description>
+</item><item>
     <title>使用本站提供的图床服务</title>
-    <link>https://www.xuewuzhibu.cn/img-storage/</link>
+    <link>https://www.xuewuzhibu.cn/image/</link>
     <pubDate>Tue, 23 Aug 2022 10:46:29 &#43;0800</pubDate><author>
         <name>isYangs</name>
-    </author><guid>https://www.xuewuzhibu.cn/img-storage/</guid>
+    </author><guid>https://www.xuewuzhibu.cn/image/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="https://a.xuewuzhibu.cn/1/62ffa1ff65991-1.jpg" referrerpolicy="no-referrer">
             </div>写在前面最开始我也是使用网上的免费图床，但是用了以后发现了很多问题，比如：对免费用户不友好，有限的空间，上传大小限制，而且因为是免费用户的原]]></description>
