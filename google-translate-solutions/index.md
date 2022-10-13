@@ -36,8 +36,6 @@ mac: v2rayU => 点击v2rayU图标，选择全局模式
 
 #### mac下修改hosts文件
 
-```code
-
 ```bash
 sudo vim /etc/hosts
 ```
