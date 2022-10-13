@@ -31,7 +31,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.xuewuzhibu.cn\/google-translate-solutions\/"
-        },"image": ["https:\/\/www.xuewuzhibu.cn\/images\/avatar.jpg"],"genre": "posts","wordcount":  1028 ,
+        },"image": ["https:\/\/www.xuewuzhibu.cn\/images\/avatar.jpg"],"genre": "posts","wordcount":  1277 ,
         "url": "https:\/\/www.xuewuzhibu.cn\/google-translate-solutions\/","datePublished": "2022-10-02T09:31:20+08:00","dateModified": "2022-10-02T09:31:20+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -131,7 +131,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="https://github.com/isYangs" title="Author" target="_blank" rel="noopener noreffer author" class="author">isYangs</a>
                 </span>&nbsp;<span class="post-category">收录于 </span>&nbsp;<span class="post-category">类别 <a href="/categories/%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"><i class="far fa-folder fa-fw"></i>一些问题的解决方法</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-10-02">2022-10-02</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-10-02">2022-10-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1028 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-10-02">2022-10-02</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-10-02">2022-10-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1277 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/google-translate-solutions/" class="leancloud_visitors" data-flag-title="关于谷歌浏览器翻译的解决方案">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class="leancloud-visitors-count waline-pageview-count" data-path="/google-translate-solutions/"></span>&nbsp;次阅读
                     </span>&nbsp;<span id="/google-translate-solutions/" class="comment_count" data-flag-title="关于谷歌浏览器翻译的解决方案">
@@ -183,8 +183,30 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在去刷新需要翻译的网页，然后右键翻译就可以正常使用了, 但是这样的话，你的所有软件都会走代理，这样会导致你的代理软件流量占用过大，并且还有可能会导致无法正常使用其他软件或网站，所以<span style="color:red"><strong>这种方法不推荐</strong></span>。</p>
-<h3 id="2修改hosts文件" class="headerLink">
-    <a href="#2%e4%bf%ae%e6%94%b9hosts%e6%96%87%e4%bb%b6" class="header-mark"></a>2.修改hosts文件</h3><blockquote>
+<h3 id="2-将api加入代理span-stylecolorred强烈推荐span作者使用方案" class="headerLink">
+    <a href="#2-%e5%b0%86api%e5%8a%a0%e5%85%a5%e4%bb%a3%e7%90%86span-stylecolorred%e5%bc%ba%e7%83%88%e6%8e%a8%e8%8d%90span%e4%bd%9c%e8%80%85%e4%bd%bf%e7%94%a8%e6%96%b9%e6%a1%88" class="header-mark"></a>2. 将API加入代理，<span style="color:red">强烈推荐</span>（作者使用方案）</h3><p>最近新发现的一个方法，可以将谷歌浏览器内置翻译的API加入代理，这样就可以不用开启全局代理了。</p>
+<p><strong>以SwitchyOmega插件为例:</strong></p>
+<p>可以将下面的URL规则添加到代理切换规则中，例如我是这样设置的：</p>
+<p><a class="lightgallery" href="https://a.xuewuzhibu.cn/1/6347a5e9153e2-1.png" title="1665639904655.png" data-thumbnail="https://a.xuewuzhibu.cn/1/6347a5e9153e2-1.png">
+        <img
+            class="lazyload"
+            data-src="https://a.xuewuzhibu.cn/1/6347a5e9153e2-1.png"
+            data-srcset="https://a.xuewuzhibu.cn/1/6347a5e9153e2-1.png, https://a.xuewuzhibu.cn/1/6347a5e9153e2-1.png 1.5x, https://a.xuewuzhibu.cn/1/6347a5e9153e2-1.png 2x"
+            data-sizes="auto"
+            alt="https://a.xuewuzhibu.cn/1/6347a5e9153e2-1.png">
+    </a></p>
+<p>这里更具你在SwitchyOmega中的设置的情景模式来选择，我选择的是<code>V2ray</code>, 因为为了便于分辨我在配置SwitchyOmega时，将情景命名为了<code>V2ray</code>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">*.translate.googleapis.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改完成后记得点击左下角的应用选项按钮，然后刷新需要翻译的网页，然后右键翻译就可以正常使用了。</p>
+<h3 id="3修改hosts文件" class="headerLink">
+    <a href="#3%e4%bf%ae%e6%94%b9hosts%e6%96%87%e4%bb%b6" class="header-mark"></a>3.修改hosts文件</h3><blockquote>
 <p>通过修改hosts文件，将谷歌翻译的域名指向国内的服务器，这样就可以正常使用了。</p>
 </blockquote>
 <h4 id="mac下修改hosts文件" class="headerLink">
